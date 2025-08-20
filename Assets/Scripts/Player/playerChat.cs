@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 
 public class PlayerChat : NetworkBehaviour
 {
-    [SerializeField] Player player;
+    [SerializeField] private Player player;
 
     public override void OnNetworkSpawn()
     {
@@ -45,7 +45,7 @@ public class PlayerChat : NetworkBehaviour
     //Which means every connected client wil call this on THEIR computer
     public void SendMessageServerRpc(string text)
     {
-        ReceiveMessageClientRpc(player.PlayerName.Value.ToString(), text);
+        ReceiveMessageClientRpc(player.playerName.Value.ToString(), text);
     }
     [ClientRpc]
     public void ReceiveMessageClientRpc(string name, string text)

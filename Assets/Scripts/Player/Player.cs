@@ -10,7 +10,7 @@ public class Player : NetworkBehaviour
     private PlayerChat playerChat;
 
     // Network variable to store player name
-    private NetworkVariable<FixedString32Bytes> playerName = new NetworkVariable<FixedString32Bytes>(
+    public NetworkVariable<FixedString32Bytes> playerName = new NetworkVariable<FixedString32Bytes>(
         value: default,
         NetworkVariableReadPermission.Everyone,
         NetworkVariableWritePermission.Owner

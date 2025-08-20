@@ -1077,6 +1077,11 @@ PrefabInstance:
       propertyPath: m_ActiveFontFeatures.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8485872566526434602, guid: eb5b6c3dd18201c49b8253253b2733fe,
+        type: 3}
+      propertyPath: nameinput
+      value: 
+      objectReference: {fileID: 1024589786}
     - target: {fileID: 8485872566526434609, guid: eb5b6c3dd18201c49b8253253b2733fe,
         type: 3}
       propertyPath: m_Name
